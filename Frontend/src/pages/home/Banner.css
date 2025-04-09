@@ -1,0 +1,26 @@
+.typing-animation {
+    display: inline-block;
+    border-right: 3px solid #100e05; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation:
+      typing 4s steps(40, end) forwards infinite,
+      blink 3s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12ch;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
